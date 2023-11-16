@@ -1,2 +1,0 @@
-# navigationbar-wx-npm
-
