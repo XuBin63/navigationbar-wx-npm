@@ -28,7 +28,7 @@
 
 .box {
 	border: 1px solid #b9b9b9;
-	background: rgba($color: #ffffff, $alpha: 0.6);
+	background: rgba(255, 255, 255, 0.6);
 	position: absolute;
 	left: 12rpx;
 	display: flex;
@@ -38,7 +38,7 @@
 
 .box2 {
 	border: 1px solid #b9b9b9;
-	background: rgba($color: #ffffff, $alpha: 0.6);
+	background: rgba(255, 255, 255, 0.6);
 	position: absolute;
 	left: 12rpx;
 	border-radius: 50%;
@@ -48,8 +48,8 @@
 }
 
 .box1 {
-	background: rgba($color: #000000, $alpha: 0.1);
-	border: 1px solid rgba($color: #cccccc, $alpha: 0.1);
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(204, 204, 204, 0.1);
 }
 
 

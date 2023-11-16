@@ -1,1 +1,1 @@
-<view>111</view>
+<navigationbar-wx title="你好" bgColor="red" />
