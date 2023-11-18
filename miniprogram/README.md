@@ -1,8 +1,12 @@
-# navigationBar-wx
+# 微信原生小程序导航栏 navigation-bar 使用说明
 
-微信原生小程序导航栏 navigation-bar 使用说明
+### 1、安装插件，并在小程序开发工具中构建 npm
 
-### 1、app.js 中得 globalData 内写上如下：
+```
+npm i navigationbar-wx
+```
+
+### 2、app.js 中得 globalData 内写上如下：
 
 ```JS
 globalData: {
@@ -18,7 +22,7 @@ globalData: {
 | title    | 否       | 小程序默认标题               |
 | homePath | 是       | 小程序首页默认路径，斜杠开头 |
 
-### 2、app.json 中配置插件
+### 3、app.json 中配置插件
 
 ```json
 "usingComponents": {
@@ -26,7 +30,7 @@ globalData: {
   }
 ```
 
-### 3、页面使用-传参如下说明
+### 4、页面使用-传参如下说明
 
 ```HTML
 <!-- 可直接使用 -->
