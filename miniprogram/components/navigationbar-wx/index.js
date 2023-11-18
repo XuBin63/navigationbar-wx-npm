@@ -1,5 +1,11 @@
-const navigationbarWx = require("./config.js");
 const app = getApp();
+let config = {
+  /**名称 */
+  title: "",
+  /**默认首页路径 */
+  homePath: "/pages/index/index",
+};
+config = { ...config, ...app.globalData.navigationbarWx };
 Component({
 
   /**
@@ -9,7 +15,7 @@ Component({
     /**标题 */
     title: {
       type: String,
-      value: navigationbarWx.config.title,
+      value: config.title,
     },
     /**logo图片url */
     logo: String,
@@ -67,7 +73,7 @@ Component({
         menu,
         pages,
       })
-      console.log("组件数据：", that.data)
+      // console.log("组件数据：", that.data)
     },
   },
   /**
@@ -80,9 +86,9 @@ Component({
     },
     /**返回首页 */
     home() {
-      console.log("跳转：", navigationbarWx.config.homePath)
+      // console.log("跳转：", config.homePath)
       wx.reLaunch({
-        url: navigationbarWx.config.homePath,
+        url: config.homePath,
       })
     },
   }

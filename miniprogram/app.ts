@@ -1,6 +1,10 @@
-// app.ts
-App<IAppOption>({
-  globalData: {},
+App({
+  globalData: {
+    navigationbarWx: {
+      title: "小程序小程序",
+      homePath: "/pages/index/index",
+    },
+  },
   onLaunch() {
     // 登录
     wx.login({

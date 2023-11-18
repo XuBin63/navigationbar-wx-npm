@@ -1,6 +1,6 @@
 {
-  "name": "navigationbar-wx4",
-  "version": "1.0.0",
+  "name": "navigationbar-wx",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {

@@ -2,14 +2,15 @@
 
 微信原生小程序导航栏 navigation-bar 使用说明
 
-### 1、app.js 中最上面导入并初始化
+### 1、app.js 中得 globalData 内写上如下：
 
 ```JS
-const navigationbarWx = require("./components/navigationbar-wx/config");
-navigationbarWx.init({
-  title: "小程序名称",
-  homePath: "首页路径，默认/pages/index/index",//最前面必须带斜杠
-})
+globalData: {
+    navigationbarWx: {
+      title: "小程序默认名称",
+      homePath: "/pages/index/index",//默认路径，如果相同可以忽略这个参数
+    },
+  },
 ```
 
 | 字段     | 是否必填 | 说明                         |
@@ -21,7 +22,7 @@ navigationbarWx.init({
 
 ```json
 "usingComponents": {
-    "navigationbar-wx": "./components/navigationbar-wx/index"
+    "navigationbar-wx": "navigationbar-wx"
   }
 ```
 
@@ -30,7 +31,7 @@ navigationbarWx.init({
 ```HTML
 <!-- 可直接使用 -->
 <navigationbar-wx />
-<!-- 可传参使用 -->
+<!-- 也可传参使用 -->
 <navigationbar-wx
 title=""
 logo=""
