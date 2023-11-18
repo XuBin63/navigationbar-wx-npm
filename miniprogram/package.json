@@ -1,10 +1,10 @@
 {
-  "name": "navigationbar-wx",
+  "name": "navigationbar-wx4",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf ../dist && cp -r ./components/navigationbar-wx/ ../dist/ && webpack --mode=production"
+    "build": "rm -rf ./dist && cp -r ./components/navigationbar-wx/ ./dist/ && webpack --mode=production"
   },
   "author": "Brandon",
   "license": "ISC",
