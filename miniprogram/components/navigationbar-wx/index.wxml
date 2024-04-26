@@ -3,11 +3,11 @@
 	<view class="title" style="height: {{menu.height}}px;line-height:{{menu.height}}px;margin-top: {{menu.top}}px;color:{{color}};" wx:if="{{title && !logo}}">{{title}}</view>
 	<image src="{{logo}}" mode="heightFix" style="height: {{menu.height}}px;margin-top: {{menu.top}}px;" class="logo" wx:elif="{{logo}}" />
 	<view class="box {{iconColor=='white'?'box1':''}}" style="top: {{menu.top}}px;width: {{menu.width}}px;height: {{menu.height}}px;border-radius: {{menu.height}}px;" wx:if="{{pages.length>1}}">
-		<image src="./img/back_{{iconColor}}.png" mode="heightFix" class="back" bind:tap="back" />
+		<image src="./img/back_{{iconColor}}.png" mode="widthFix" class="back" bind:tap="back" style="width:{{menu.height*0.6}}px;height:{{menu.height*0.6}}px;" />
 		<view class="line"></view>
-		<image src="./img/home_{{iconColor}}.png" mode="heightFix" class="home" bind:tap="home" />
+		<image src="./img/home_{{iconColor}}.png" mode="widthFix" class="home" bind:tap="home" style="width:{{menu.height*0.7}}px;height:{{menu.height*0.7}}px;" />
 	</view>
 	<view class="box2 {{iconColor=='white'?'box1':''}}" style="top: {{menu.top}}px;width: {{menu.height}}px;height: {{menu.height}}px;" wx:elif="{{!hideHome}}" bind:tap="home">
-		<image src="./img/home_{{iconColor}}.png" mode="heightFix" class="home" />
+		<image src="./img/home_{{iconColor}}.png" mode="widthFix" class="home" style="width:{{menu.height*0.7}}px;height:{{menu.height*0.7}}px;" />
 	</view>
 </view>

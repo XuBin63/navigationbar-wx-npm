@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigationbar-wx":"../../components/navigationbar-wx/index"
+  },
+  "navigationStyle": "custom"
+}

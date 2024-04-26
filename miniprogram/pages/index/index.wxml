@@ -1,1 +1,2 @@
-<navigationbar-wx bgColor="red" />
+<navigationbar-wx />
+<button bind:tap="next">下个页面</button>

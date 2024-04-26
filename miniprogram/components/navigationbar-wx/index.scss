@@ -27,7 +27,7 @@
 }
 
 .box {
-	border: 1px solid #b9b9b9;
+	border: 1px solid rgba(185, 185, 185, 0.3);
 	background: rgba(255, 255, 255, 0.6);
 	position: absolute;
 	left: 12rpx;
@@ -37,7 +37,7 @@
 }
 
 .box2 {
-	border: 1px solid #b9b9b9;
+	border: 1px solid rgba(185, 185, 185, 0.3);
 	background: rgba(255, 255, 255, 0.6);
 	position: absolute;
 	left: 12rpx;
@@ -50,17 +50,6 @@
 .box1 {
 	background: rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(204, 204, 204, 0.1);
-}
-
-
-.back {
-	width: 44rpx;
-	height: 70%;
-}
-
-.home {
-	width: 44rpx;
-	height: 80%;
 }
 
 .line {
