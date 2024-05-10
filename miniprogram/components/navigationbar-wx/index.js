@@ -1,11 +1,5 @@
-const app = getApp();
-let config = {
-  /**名称 */
-  title: "",
-  /**默认首页路径 */
-  homePath: "/pages/index/index",
-};
-config = { ...config, ...app.globalData.navigationbarWx };
+const { navigationbarWx } = require("./config");
+const { config } = navigationbarWx;
 Component({
 
   /**
@@ -18,37 +12,48 @@ Component({
       value: config.title,
     },
     /**logo图片url */
-    logo: String,
+    logo: {
+      type: String,
+      value: config.logo,
+    },
     /**字体颜色 */
     color: {
       type: String,
-      value: "#000000",
+      value: config.color,
     },
     /**背景颜色 */
     bgColor: {
       type: String,
-      value: "#ffffff",
+      value: config.bgColor,
     },
     /**背景图片 */
-    bgImg: String,
+    bgImg: {
+      type: String,
+      value: config.bgImg,
+    },
     /**图标颜色
      * 默认黑：black
      * 白：white
      */
     iconColor: {
       type: String,
-      value: "black",
+      value: config.iconColor,
     },
     /**是否隐藏返回按钮 */
     hideHome: {
       type: Boolean,
-      value: false,
+      value: config.hideHome,
     },
     /**是否隐藏填充 */
     hideSeat: {
       type: Boolean,
-      value: false,
-    }
+      value: config.hideSeat,
+    },
+    /**首页默认路径 */
+    homePath: {
+      type: String,
+      value: config.homePath,
+    },
   },
 
   /**
@@ -73,7 +78,6 @@ Component({
         menu,
         pages,
       })
-      // console.log("组件数据：", that.data)
     },
   },
   /**
@@ -86,9 +90,10 @@ Component({
     },
     /**返回首页 */
     home() {
-      // console.log("跳转：", config.homePath)
+      let that = this;
+      let { homePath } = that.data;
       wx.reLaunch({
-        url: config.homePath,
+        url: homePath[0] == '/' ? homePath : `/${homePath}`,
       })
     },
   }

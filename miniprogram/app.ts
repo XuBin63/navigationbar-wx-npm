@@ -1,9 +1,10 @@
+import { navigationbarWx } from "./components/navigationbar-wx/config.js";
+navigationbarWx.init({
+  title: "牛牛牛",
+})
 App({
   globalData: {
-    navigationbarWx: {
-      title: "小程序小程序",
-      homePath: "/pages/index/index",
-    },
+    
   },
   onLaunch() {
     // 登录
