@@ -21,7 +21,6 @@ const navigationbarWx = {
 	},
 	init(data) {
 		this.config = { ...this.config, ...data };
-		console.log(this.config);
 	}
 };
 module.exports = { navigationbarWx };
