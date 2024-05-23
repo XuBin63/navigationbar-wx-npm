@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf ./dist ./README.md && cp -r ./components/navigationbar-wx/ ./dist/  && cp -r ../README.md ./ && webpack --mode=production"
+    "build": "webpack"
   },
   "author": "Brandon",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   },
-  "miniprogram": "dist"
+  "miniprogram": "dist",
+  "dependencies": {
+    "copy-webpack-plugin": "^12.0.2"
+  }
 }
