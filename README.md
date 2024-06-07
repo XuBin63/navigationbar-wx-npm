@@ -57,3 +57,7 @@ hideSeat=""
 | hideHome  | 否   | Boolean | false              | 当没有上一级页面时，是否隐藏小房子                |
 | hideSeat  | 否   | Boolean | false              | 导航栏底部占位，默认占位不隐藏                    |
 | homePath  | 否   | String  | /pages/index/index | 页面如果设置这个参数优先级高于 init 时传入的路径  |
+
+### github 地址
+
+[github 地址](https://github.com/XuBin63/navigationbar-wx-npm)
