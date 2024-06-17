@@ -1,10 +1,13 @@
 import { navigationbarWx } from "./components/navigationbar-wx/config.js";
 navigationbarWx.init({
-  title: "牛牛牛",
+  title: "小程序标题",
+  iconColor: "white",
+  bgColor:"#000",
+  color:"#fff"
 })
 App({
   globalData: {
-    
+
   },
   onLaunch() {
     // 登录

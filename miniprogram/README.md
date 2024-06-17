@@ -1,5 +1,10 @@
 # 微信原生小程序导航栏 navigation-bar 使用说明
 
+### 预览
+
+<img src="./assets/imgs/WX20240617-174824.png"/>
+<img src="./assets/imgs/WX20240617-174835.png"/>
+
 ### 1、安装插件，并在小程序开发工具中构建 npm
 
 ```
@@ -57,3 +62,7 @@ hideSeat=""
 | hideHome  | 否   | Boolean | false              | 当没有上一级页面时，是否隐藏小房子                |
 | hideSeat  | 否   | Boolean | false              | 导航栏底部占位，默认占位不隐藏                    |
 | homePath  | 否   | String  | /pages/index/index | 页面如果设置这个参数优先级高于 init 时传入的路径  |
+
+### github 地址
+
+[github 地址](https://github.com/XuBin63/navigationbar-wx-npm)
