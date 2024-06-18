@@ -1,10 +1,5 @@
 # 微信原生小程序导航栏 navigation-bar 使用说明
 
-### 预览
-
-<img src="./assets/imgs/WX20240617-174824.png"/>
-<img src="./assets/imgs/WX20240617-174835.png"/>
-
 ### 1、安装插件，并在小程序开发工具中构建 npm
 
 ```
